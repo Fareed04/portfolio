@@ -77,7 +77,7 @@ PROJECTS_DATA = [
         'long_description': "To bridge communication gaps in healthcare settings, I built a full-stack Django application that provides real-time speech translation. The system uses Web Speech APIs for capture and a Python backend for processing and logging. It was designed with low latency in mind to ensure smooth doctor-patient interactions.",
         'tags': ["Python", "Django", "JavaScript", "NLP", "Speech-to-Text", "REST API"],
         'stats': "Real-Time Processing",
-        'link': "https://github.com/Fareed04/healthcare_translation_project", 
+        'link': "https://healthcaretranslation-ruddy.vercel.app", 
         'github': "https://github.com/Fareed04/healthcare_translation_project", 
         'bg': "from-red-600/10 to-rose-600/10"
     },
@@ -96,8 +96,8 @@ def home(request):
                 "and translating it into decisions managers can act on immediately. "
                 "Experienced in Python-driven analysis, SQL, and end-to-end analytics workflows."
             ),
-            'email': 'ologundudu.fareed@example.com',
-            'linkedin': 'https://linkedin.com/in/fareedologundudu',
+            'email': 'ologundudufareed@gmail.com',
+            'linkedin': 'https://linkedin.com/in/fareed-ologundudu-129506249',
             'github': 'https://github.com/Fareed04'
         },
         'skills': {
