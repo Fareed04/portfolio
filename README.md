@@ -1,6 +1,8 @@
 # 📊 Fareed Ologundudu | Data Analyst Portfolio
 
-A production style portfolio website built with **Python and Django** to present data analytics projects focused on **operations, business performance, and decision making**.
+🔗 **Live Portfolio:** https://fareed04.pythonanywhere.com/
+
+A production style portfolio website built with **Python and Django** to showcase data analytics work focused on **operations, business performance, and decision making**.
 
 This portfolio is designed to communicate not just tools used, but **business problems solved, insights generated, and decisions enabled**.
 
@@ -8,7 +10,10 @@ This portfolio is designed to communicate not just tools used, but **business pr
 
 ## 🎯 Purpose
 
-This portfolio showcases how I approach real world data problems, especially in areas such as logistics, sales operations, and healthcare analytics.
+This portfolio demonstrates how I approach real world data problems, particularly in:
+• Logistics and delivery performance  
+• Sales and revenue analytics  
+• Healthcare operations and no show analysis  
 
 The emphasis is on:
 • Identifying operational inefficiencies  
@@ -17,13 +22,13 @@ The emphasis is on:
 
 ---
 
-## 🚀 Key Features
+## 🚀 What You Will Find
 
-• Clean, professional interface suitable for recruiters and hiring managers  
-• Fully responsive layout for desktop and mobile  
+• Clean, professional interface designed for recruiters and hiring managers  
+• Fully responsive layout for desktop and mobile viewing  
 • Project filtering by analytics category  
-• Dedicated case study pages explaining problem context, approach, and outcomes  
-• Lightweight Django setup focused on clarity and performance  
+• Dedicated case study pages explaining business context, analytical approach, and outcomes  
+• Lightweight Django architecture focused on clarity, speed, and maintainability  
 
 ---
 
@@ -38,8 +43,8 @@ HTML5, Tailwind CSS, Vanilla JavaScript
 **Data and Analytics**  
 Pandas, NumPy, Matplotlib, Seaborn  
 
-**Deployment Ready**  
-PythonAnywhere or Render  
+**Deployment**  
+PythonAnywhere  
 
 ---
 
@@ -82,23 +87,23 @@ Open `http://127.0.0.1:8000` in your browser.
 ## 📂 Project Structure
 
 ```
-├── home/              Django app containing views and templates
-│   ├── templates/          HTML templates for pages and case studies
-│   ├── static/             Static assets including images and resume
-│   ├── views.py            View logic
-│   └── urls.py             App level routing
-├── portfolio/                 Project configuration
-├── manage.py               Django management utility
-└── requirements.txt        Python dependencies
+├── home/                     Django app containing views and templates
+│   ├── templates/            HTML templates for pages and case studies
+│   ├── static/               Static assets including images and resume
+│   ├── views.py              View logic
+│   └── urls.py               App level routing
+├── portfolio/                Project configuration
+├── manage.py                 Django management utility
+└── requirements.txt          Python dependencies
 ```
 
 ---
 
 ## 🌍 Deployment
 
-The project is structured for straightforward deployment on platforms such as PythonAnywhere or Render.
+The application is deployed on PythonAnywhere and structured for straightforward redeployment or migration if needed.
 
-Deployment focuses on simplicity and maintainability rather than over engineering.
+Deployment prioritizes simplicity, reliability, and low operational overhead.
 
 ---
 
@@ -111,4 +116,3 @@ GitHub: [https://github.com/Fareed04](https://github.com/Fareed04)
 ---
 
 Built and maintained by Fareed Ologundudu
-  
