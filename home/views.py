@@ -88,13 +88,13 @@ def home(request):
         'profile': {
             'name': 'Fareed Ologundudu',
             'roles': [
-                "Python Data Analyst",
-                "Operations & Business Analyst"
+                "A Python Data Analyst",
+                "An Operations & Business Analyst"
             ],
             'about': (
-                "I help teams identify and fix operational inefficiencies by analyzing messy, real-world data "
-                "and translating it into decisions managers can act on immediately. "
-                "Experienced in Python-driven analysis, SQL, and end-to-end analytics workflows."
+                "I identify and fix operational inefficiencies by analyzing messy, real-world data and translating "
+                "it into clear, actionable decisions that managers can implement quickly. I am experienced in "
+                "Python-driven analysis, SQL, and end-to-end analytics workflows."
             ),
             'email': 'ologundudufareed@gmail.com',
             'linkedin': 'https://linkedin.com/in/fareed-ologundudu-129506249',
