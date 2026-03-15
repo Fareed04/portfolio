@@ -5,19 +5,6 @@ from django.http import Http404
 PROJECTS_DATA = [
     {
         'id': 1,
-        'title': "Bank Customer Churn Prediction",
-        'category': "Deep Learning",
-        'filter_category': "Predictive Modeling", # Added for button mapping
-        'description': "Developed a deep learning pipeline using Artificial Neural Networks (ANN) to forecast customer attrition with 87% accuracy. Integrated a real-time Streamlit dashboard to transform model probabilities into actionable retention strategies.",
-        'long_description': "This project involved building a robust deep learning pipeline using TensorFlow and Keras to tackle the challenge of bank customer churn. Beyond just prediction, I integrated a real-time Streamlit dashboard that translates complex model probabilities into actionable retention strategies for account managers. The model successfully handles class imbalance and provides clear insights into the drivers of attrition.",
-        'tags': ["TensorFlow", "Keras", "Python", "Deep Learning", "Streamlit", "Scikit-Learn"],
-        'stats': "87% Accuracy",
-        'link': "https://github.com/Fareed04/Customer-Churn-Prediction-using-ANN",
-        'github': "https://github.com/Fareed04/Customer-Churn-Prediction-using-ANN",
-        'bg': "from-blue-600/20 to-indigo-600/20"
-    },
-    {
-        'id': 2,
         'title': "Medical Appointment No-Show Analysis",
         'category': "Data Analytics & ML",
         'filter_category': "Predictive Modeling",
@@ -30,7 +17,7 @@ PROJECTS_DATA = [
         'bg': "from-teal-500/10 to-emerald-500/10"  
     },
     {
-        'id': 3,
+        'id': 2,
         'title': "E-Commerce Logistics Analysis",
         'category': "Data Analytics & SQL",
         'filter_category': "Business Analytics",
@@ -38,12 +25,38 @@ PROJECTS_DATA = [
         'long_description': "Using the Olist e-commerce dataset, I performed deep-dive SQL queries and Python-based visualization to uncover a 'Double Loss' pattern. This pattern showed that late deliveries didn't just hurt satisfaction—they directly increased freight costs by 12%. My analysis provided a roadmap for logistics optimization that balances cost and speed.",
         'tags': ["SQL", "Python", "Pandas", "Matplotlib", "Logistics Analysis", "Business Intelligence"],
         'stats': "12% Cost Reduction Potential",
-        'link': "https://github.com/Fareed04/logistics-performance-analysis/blob/main/README.md",
-        'github': "https://github.com/Fareed04/logistics-performance-analysis/blob/main/README.md",
+        'link': "https://github.com/Fareed04/logistics-performance-analysis",
+        'github': "https://github.com/Fareed04/logistics-performance-analysis",
         'bg': "from-orange-500/10 to-amber-500/10"
     },
     {
+        'id': 3,
+        'title': 'Cyclistic Bike Share Case Study',
+        'category': 'Google Data Analytics Capstone',
+        'filter_category': 'Exploratory Analysis',
+        'description': 'Analyzed 5.5M+ bike share trip records to identify behavioral differences between casual riders and annual members and develop data driven marketing recommendations.',
+        'long_description': 'This project is the capstone for the Google Data Analytics Professional Certificate. I analyzed over 5.5 million Cyclistic bike share trip records using Python and Pandas to uncover behavioral differences between casual riders and annual members. The analysis included building a data cleaning pipeline, engineering ride duration and temporal features, and exploring rider behavior across time of day, day of week, and seasonal trends. The results highlight clear commuting patterns for members and recreational usage patterns for casual riders. Based on these insights, targeted marketing strategies such as weekend promotions and seasonal membership campaigns were proposed to increase membership conversion.',
+        'stats': '5.5M+ trip records analyzed',
+        'tags': ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'EDA'],
+        'bg': 'from-blue-500/20 to-green-500/20',
+        'github': 'https://github.com/Fareed04/Case_Study__Cyclistic_bike_share_analysis',
+        'link': 'https://github.com/Fareed04/Case_Study__Cyclistic_bike_share_analysis'
+    },    
+    {
         'id': 4,
+        'title': "Bank Customer Churn Prediction",
+        'category': "Deep Learning",
+        'filter_category': "Predictive Modeling", # Added for button mapping
+        'description': "Developed a deep learning pipeline using Artificial Neural Networks (ANN) to forecast customer attrition with 87% accuracy. Integrated a real-time Streamlit dashboard to transform model probabilities into actionable retention strategies.",
+        'long_description': "This project involved building a robust deep learning pipeline using TensorFlow and Keras to tackle the challenge of bank customer churn. Beyond just prediction, I integrated a real-time Streamlit dashboard that translates complex model probabilities into actionable retention strategies for account managers. The model successfully handles class imbalance and provides clear insights into the drivers of attrition.",
+        'tags': ["TensorFlow", "Keras", "Python", "Deep Learning", "Streamlit", "Scikit-Learn"],
+        'stats': "87% Accuracy",
+        'link': "https://github.com/Fareed04/Customer-Churn-Prediction-using-ANN",
+        'github': "https://github.com/Fareed04/Customer-Churn-Prediction-using-ANN",
+        'bg': "from-blue-600/20 to-indigo-600/20"
+    },
+    {
+        'id': 5,
         'title': "Sales Performance Intelligence",
         'category': "Financial Analytics",
         'filter_category': "Business Analytics",
@@ -56,7 +69,7 @@ PROJECTS_DATA = [
         'bg': "from-green-500/10 to-emerald-500/10"
     },
     {
-        'id': 5,
+        'id': 6,
         'title': "Chess.com Personal Analytics",
         'category': "Personal Growth / API Analysis",
         'filter_category': "Exploratory Analysis",
@@ -69,7 +82,7 @@ PROJECTS_DATA = [
         'bg': "from-slate-700/10 to-gray-500/10"
     },
     {
-        'id': 6,
+        'id': 7,
         'title': "Healthcare Speech Translator",
         'category': "Applied AI",
         'filter_category': "Python Development",
@@ -81,6 +94,17 @@ PROJECTS_DATA = [
         'github': "https://github.com/Fareed04/healthcare_translation_project", 
         'bg': "from-red-600/10 to-rose-600/10"
     },
+]
+
+certifications = [
+    {
+        'title': 'Google Data Analytics Professional Certificate',
+        'issuer': 'Google / Coursera',
+        'date': '2026',
+        'description': 'A rigorous, hands-on program covering the entire data analysis process: asking questions, preparing, processing, analyzing, sharing, and acting on data using spreadsheets, SQL, R, and Tableau.',
+        'badge_image': 'https://www.credly.com/badges/5d309060-1adc-47f9-9ab0-da2d934d9b08',
+        'link': 'https://coursera.org/share/250613b58974c255cf86759cd2486c9f'
+    }
 ]
 
 def home(request):
