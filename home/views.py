@@ -102,7 +102,7 @@ certifications = [
         'issuer': 'Google / Coursera',
         'date': '2026',
         'description': 'A rigorous, hands-on program covering the entire data analysis process: asking questions, preparing, processing, analyzing, sharing, and acting on data using spreadsheets, SQL, R, and Tableau.',
-        'badge_image': 'https://www.credly.com/badges/5d309060-1adc-47f9-9ab0-da2d934d9b08',
+        'image': 'home/google-data-analytics-professional-certificate-badge.png',
         'link': 'https://coursera.org/share/250613b58974c255cf86759cd2486c9f'
     }
 ]
@@ -144,7 +144,8 @@ def home(request):
                 {"name": "Tableau", "level": 65}
             ]
         },
-        'projects': PROJECTS_DATA
+        'projects': PROJECTS_DATA,
+        'certifications': certifications
     }
     return render(request, 'home/home.html', context)
 

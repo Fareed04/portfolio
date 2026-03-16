@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-*czq_i&cd((8thq)%391ic6xdcs5rsz-=1ny-l&_*lmgrre5zm"
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['fareed04.pythonanywhere.com', 'localhost', '127.0.0.1']
 

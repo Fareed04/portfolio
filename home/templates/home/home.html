@@ -203,6 +203,41 @@
         </div>
     </section>
 
+    <section id="certifications" class="py-12 bg-cream dark:bg-gray-950 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+                {% for cert in certifications %}
+                <div class="reveal bg-white dark:bg-gray-900 rounded-2xl p-6 border border-stone-200 dark:border-gray-800 flex flex-col md:flex-row items-center gap-8 hover:border-cyan-500/30 transition-all">
+                    
+                    <div class="flex-shrink-0">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                            <img src="{% static cert.image %}" 
+                                alt="{{ cert.title }}" 
+                                class="relative w-32 h-32 md:w-40 md:h-40 object-contain bg-white dark:bg-gray-800 rounded-full p-2">
+                        </div>
+                    </div>
+
+                    <div class="flex-grow text-center md:text-left">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-stone-900 dark:text-white">{{ cert.title }}</h3>
+                                <p class="text-cyan-600 dark:text-cyan-400 font-medium">{{ cert.issuer }} • {{ cert.date }}</p>
+                            </div>
+                            <a href="{{ cert.link }}" target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-2 bg-stone-100 dark:bg-gray-800 text-stone-900 dark:text-white rounded-lg font-semibold hover:bg-cyan-600 hover:text-white dark:hover:bg-cyan-500 transition-all border border-stone-200 dark:border-gray-700">
+                                Verify Credential <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        <p class="text-stone-600 dark:text-gray-400 leading-relaxed max-w-3xl">
+                            {{ cert.description }}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
