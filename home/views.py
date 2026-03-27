@@ -70,13 +70,13 @@ PROJECTS_DATA = [
     },
     {
         'id': 6,
-        'title': "Chess.com Personal Analytics",
+        'title': "Chess.com Performance Analysis",
         'category': "Personal Growth / API Analysis",
         'filter_category': "Exploratory Analysis",
-        'description': "Engineered a data pipeline using the Chess.com API to extract and analyze 2,000+ personal games. Developed custom visualizations to identify high-win-rate openings (75% with Englund Gambit) and pinpoint tactical weaknesses in specific variations.",
-        'long_description': "Combining my passion for chess with data engineering, I built a custom pipeline to extract game data from the Chess.com API. I cleaned and structured data from over 2,000 games to perform granular analysis on opening repertoires. The analysis highlighted a 75% win rate with the Englund Gambit but revealed mid-game tactical weaknesses in closed positions.",
-        'tags': ["Python", "APIs", "Data Visualization", "Pandas", "Seaborn", "Exploratory Data Analysis"],
-        'stats': "2,000+ Games Analyzed",
+        'description': "Built a reproducible data pipeline using the Chess.com API to extract and analyze 3,254 personal games across Bullet, Blitz, and Rapid. Identified opening strengths and weaknesses by color, tracked rating progression, and generated actionable improvement recommendations.",
+        'long_description': "Combining a passion for chess with data analytics, I built a full end-to-end analysis pipeline following the Google Data Analytics case study framework (Ask, Prepare, Process, Analyze, Share, Act). I extracted 3,254 rated games via the Chess.com Public API, engineered key features including player color, opening family, and result from the player perspective, and performed granular analysis across five dimensions: overall performance, color-based performance, rating progression, opening repertoire, and accuracy. Key findings include a 26% of all games played in the Scandinavian Defense at only 48.8% win rate, Queens Gambit as Black at 39.5% win rate, and Kings Fianchetto as the weakest opening on both sides with the lowest accuracy at 61.15%. Rapid rating has grown +1,039 points to an all time peak of 1,476.",
+        'tags': ["Python", "APIs", "Data Visualization", "Pandas", "Matplotlib", "Seaborn", "Exploratory Data Analysis"],
+        'stats': "3,254 Games Analyzed",
         'link': "https://github.com/Fareed04/Chess-data-analysis",
         'github': "https://github.com/Fareed04/Chess-data-analysis",
         'bg': "from-slate-700/10 to-gray-500/10"
