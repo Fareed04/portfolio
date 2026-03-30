@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <style>
+    .brand-color { fill: #1c1917; } 
+    @media (prefers-color-scheme: dark) {
+      .brand-color { fill: #22d3ee; }
+    }
+  </style>
+  <path class="brand-color" d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 24c-5.5 0-10-4.5-10-10S10.5 6 16 6s10 4.5 10 10-4.5 10-10 10zm-4-16h8v3h-5v3h4v3h-4v5h-3V10z"/>
+</svg>
