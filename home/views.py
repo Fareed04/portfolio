@@ -122,7 +122,7 @@ def home(request):
             ),
             'email': 'ologundudufareed@gmail.com',
             'linkedin': 'https://linkedin.com/in/fareed-ologundudu-129506249',
-            'github': 'https://github.com/Fareed04'
+            'github': 'https://github.com/Fareed04',
         },
         'skills': {
             "Core Analytics": [

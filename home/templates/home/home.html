@@ -151,9 +151,9 @@
                 </div>
 
                 <div class="reveal flex justify-center items-center gap-6 pt-6 text-stone-400 dark:text-gray-500" style="transition-delay: 500ms;">
-                    <a href="{{ profile.github }}" class="hover:text-stone-900 dark:hover:text-white hover:scale-110 transition-all"><i data-lucide="github"></i></a>
-                    <a href="{{ profile.linkedin }}" class="hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition-all"><i data-lucide="linkedin"></i></a>
-                    <a href="mailto:{{ profile.email }}" class="hover:text-cyan-600 dark:hover:text-cyan-400 hover:scale-110 transition-all"><i data-lucide="mail"></i></a>
+                    <a href="{{ profile.github }}" class="inline-block hover:text-stone-900 dark:hover:text-white hover:scale-110 transition-all"><i data-lucide="github"></i></a>
+                    <a href="{{ profile.linkedin }}" class="inline-block hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition-all"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:{{ profile.email }}" class="inline-block hover:text-cyan-600 dark:hover:text-cyan-400 hover:scale-110 transition-all"><i data-lucide="mail"></i></a>
                 </div>
             </div>
         </div>
@@ -441,6 +441,33 @@
                     }
                 });
             });
+        });
+    </script>
+    <script>
+        // Initialize Lucide Icons immediately
+        lucide.createIcons();
+
+        // Reveal Animation Logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // If the revealed element contains icons, re-run Lucide 
+                    // to ensure they render correctly within the transition
+                    if (entry.target.querySelector('[data-lucide]')) {
+                        lucide.createIcons();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
