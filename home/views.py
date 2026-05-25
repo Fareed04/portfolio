@@ -104,6 +104,14 @@ certifications = [
         'description': 'A rigorous, hands-on program covering the entire data analysis process: asking questions, preparing, processing, analyzing, sharing, and acting on data using spreadsheets, SQL, R, and Tableau.',
         'image': 'home/google-data-analytics-professional-certificate-badge.png',
         'link': 'https://coursera.org/share/250613b58974c255cf86759cd2486c9f'
+    },
+    {
+        'title': 'Google Data Analysis with Python Specialization',
+        'issuer': 'Google / Coursera',
+        'date': '2026',
+        'description': 'An advanced, code-centric program focused on leveraging Python for the complete data science lifecycle. Developed expertise in data manipulation with Pandas and NumPy, exploratory data analysis (EDA), and data visualization with Matplotlib and Seaborn to uncover actionable insights.',
+        'image': 'home/google-data-analysis-with-python-badge.png',
+        'link': 'https://coursera.org/share/fdf1c72fa905e9605512436f7794d844'
     }
 ]
 
